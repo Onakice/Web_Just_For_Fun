@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Binary Calculator</h1>
+        <div>
+            <label for="binary1">Binary 1:</label>
+            <input type="text" id="binary1" placeholder="Enter first binary number">
+        </div>
+        <div>
+            <label for="binary2">Binary 2:</label>
+            <input type="text" id="binary2" placeholder="Enter second binary number">
+        </div>
+        <button onclick="calculate()">Calculate</button>
+        <button onclick="generateRandomProblem()">Generate Random Problem</button>
+        <button onclick="toggleResults()">Toggle Results</button>
+        
+        <div id="results" class="results">
+            <p><strong>Binary Result:</strong> <span id="binaryResult"></span></p>
+            <p><strong>Decimal Result:</strong> <span id="decimalResult"></span></p>
+            <p><strong>Hex Result:</strong> <span id="hexResult"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
